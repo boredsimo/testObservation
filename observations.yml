@@ -1,0 +1,29 @@
+type: prog
+
+titre: parcourir les éléments d un tableau
+
+niveau: ceinture jaune
+
+objectif: comprendre comment faire des itratins sur un tableau
+
+énoncé:
+      ### itérer sur le tableau suivant tout en en affichant ses valeurs
+
+rétroactions:
+      positive: bien fait!
+      négative: lisez les tableaux
+      erreur: regardez votre syntaxe
+ébauches:
+      clé: pat++
+      valeur: ```c=input()
+      a=input()
+      ```
+tests:
+      - entrée:[1,2,3,4]
+        sortie:1
+	       2
+	       3
+	       4
+      - rétroactions:
+        positive: bien
+	négative: non
