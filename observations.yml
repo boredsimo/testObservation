@@ -6,19 +6,20 @@ niveau: ceinture jaune
 
 objectif: comprendre comment faire des itratins sur un tableau
 
-énoncé:
+énoncé: |
       ### itérer sur le tableau suivant tout en en affichant ses valeurs
 
-rétroactions:
+rétroactions: |
       positive: bien fait!
       négative: lisez les tableaux
       erreur: regardez votre syntaxe
-ébauches:
+ébauches: |
       clé: pat++
       valeur: ```c=input()
       a=input()
       ```
-tests:
+tests: |
+
       - entrée:[1,2,3,4]
         sortie:1
 	       2
@@ -26,4 +27,4 @@ tests:
 	       4
       - rétroactions:
         positive: bien
-	négative: non
+        négative: non
