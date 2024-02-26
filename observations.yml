@@ -23,6 +23,8 @@ tests: |
   - nom: Une seule fois
     entrée: [1,2,3,4]
     sortie: | 1
+
+    
     rétroactions:
      positive: Bien joué! 0 est aussi une entrée valable.
      négative: N'oublie pas les cas limites, 0 est aussi une entrée valable!
