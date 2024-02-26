@@ -15,7 +15,7 @@ rétroactions:
   erreur: regardez votre syntaxe
 ébauches: |
  python: |
-    c=inpu()
+    c=input()
     a=input()
 
 tests: |
