@@ -21,7 +21,7 @@ rétroactions:
 tests: |
 
   - nom: Une seule fois
-    entrée:[1,2,3,4]
+    entrée: [1,2,3,4]
     sortie: |1
 	       2
 	       3
