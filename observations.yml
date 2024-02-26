@@ -13,7 +13,7 @@ rétroactions:
   positive: bien fait!
   négative: lisez les tableaux
   erreur: regardez votre syntaxe
-ébauches: |
+ébauches: 
  python: |
     c=input()
     a=input()
