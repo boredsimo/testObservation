@@ -1,30 +1,61 @@
 type: prog
 
-titre: parcourir les éléments d un tableau
+titre: Appeler une fonction paramétrée
 
-niveau: ceinture jaune
-
-objectif: comprendre comment faire des itratins sur un tableau
+objectif: Mettre en pratique la notion d'appel de fonction
 
 énoncé: |
-      ### itérer sur le tableau suivant tout en en affichant ses valeurs
+                La fonction `salutations` produit en sortie une salutation autant de fois que la valeur reçue en paramètre.
 
-rétroactions: 
-  positive: bien fait!
-  négative: lisez les tableaux
-  erreur: regardez votre syntaxe
-ébauches: 
+                Utilisez-la pour faire produire en sortie «Bonjour le monde!» autant de fois que le nombre reçu en entrée.
+
+rétroactions:
+  positive: "**Très bien!** Vous avez maintenant appélé une fonction paramétrée"
+  négative: Encore un petit effort. Pour plus d'information sur l'appel des fonctions, voir [Appel de fonction](https://exemple.com/doc/lesfonctions.html)
+  erreur: Vérifiez la syntaxe d'un appel de fonction
+
+ébauches:
  python: |
-    c=input()
-    a=input()
+    #+VISIBLE
+    nb_répétitions = int( input() )
+          #+TODO
 
-tests: |
-
-  - nom: Une seule fois
-    entrée: [1,2,3,4]
-    sortie: | 1
-
+          #-TODO
+          #-VISIBLE
+ java: |
+    import java.util.Scanner;
+    public class exec {
+    //+VISIBLE
     
-    rétroactions:
+    public static void main(String[] args) {
+    
+        Scanner input = new Scanner( System.in );
+                
+        nb_répétitions = input.nextInt();
+    //+TODO
+    
+
+    //-TODO
+        }
+    //-VISIBLE
+    }
+
+tests:
+ - nom: Une seule fois
+   entrée: Bonjour le monde!
+   params: -n 1
+   sortie: Bonjour le monde!
+ - nom: Trois fois
+   entrée: Bonjour le monde!
+   params: -n 3
+   sortie: |
+           Bonjour le monde!
+           Bonjour le monde!
+           Bonjour le monde!
+ - nom: 0 fois
+   entrée: Bonjour le monde!
+   params: -n 0
+   sortie: ""
+   rétroactions:
      positive: Bien joué! 0 est aussi une entrée valable.
      négative: N'oublie pas les cas limites, 0 est aussi une entrée valable!
