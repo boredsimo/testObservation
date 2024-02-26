@@ -22,7 +22,7 @@ rétroactions:
 
 tests:
  - nom: Une seule fois
-   entrée: [0,1,2,3]
+   entrée: Bonjour le monde!
    params: -n 1
    sortie: Bonjour le monde!
  
