@@ -16,46 +16,16 @@ rétroactions:
 
 ébauches:
  python: |
-    #+VISIBLE
-    nb_répétitions = int( input() )
-          #+TODO
-
-          #-TODO
-          #-VISIBLE
- java: |
-    import java.util.Scanner;
-    public class exec {
-    //+VISIBLE
-    
-    public static void main(String[] args) {
-    
-        Scanner input = new Scanner( System.in );
-                
-        nb_répétitions = input.nextInt();
-    //+TODO
-    
-
-    //-TODO
-        }
-    //-VISIBLE
-    }
+    a=input()
+    c=input()
+ 
 
 tests:
  - nom: Une seule fois
-   entrée: Bonjour le monde!
+   entrée: [0,1,2,3]
    params: -n 1
    sortie: Bonjour le monde!
- - nom: Trois fois
-   entrée: Bonjour le monde!
-   params: -n 3
-   sortie: |
-           Bonjour le monde!
-           Bonjour le monde!
-           Bonjour le monde!
- - nom: 0 fois
-   entrée: Bonjour le monde!
-   params: -n 0
-   sortie: ""
+ 
    rétroactions:
      positive: Bien joué! 0 est aussi une entrée valable.
      négative: N'oublie pas les cas limites, 0 est aussi une entrée valable!
